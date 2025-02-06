@@ -6,12 +6,16 @@ class Student {
 
     private:
         int StudentID;
-    
 
     public:
         string Name;
         int RollNumber;
         char Section;
+
+        // creating a constructor
+        Student() {
+            cout << "Defualt constructor" << endl;
+        }
         
         // Getter for Name
         string GetName() {

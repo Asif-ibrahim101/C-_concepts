@@ -1,14 +1,18 @@
 #include <iostream>
-#include "StudentClass.cpp";
+#include "StudentClass.cpp"
 using namespace std;
 
 int main() {
     Student *stu = new Student; //Memory in heap
 
-    string Name = "Asif";
-    int Roll = 12124;
-    char section = 'A';
-    int studentId = 2104678;
+    string Name;
+    int Roll;
+    char section;
+    int studentId;
+
+    // taking the infos
+    cout << "give me your details: ";
+    cin >> Name >> Roll >> section >> studentId; 
 
     // Accessing the memory using pointers
     // setting the values using pointers
